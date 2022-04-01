@@ -1,3 +1,7 @@
 <x-app-layout>
-    <h1>Hello there!</h1>
+
+    @foreach($posts as $post)
+      <p>{{$post->title}}</p>
+    @endforeach
+
 </x-app-layout>
